@@ -4,14 +4,25 @@ export default function DoubleDice(){
     // Conditionals
 
     // No 1 (Best Method): 
+
     return(
-            <div>
-                <p>{m === n ? "You Win!" : "You Lose!"}</p>
-                <p>Num 1: {m}</p>
-                <p>Num 2: {n}</p>
-            </div>
+        <div>
+            <h2>Double Dice</h2>
+            {n === m && <h3>"You Win!"</h3>}
+            <p>Num 1: {m}</p>
+            <p>Num 2: {n}</p>
+        </div>
     );
-    
+
+    // return(
+    //         <div>
+    //             <h2>Double Dice</h2>
+    //             {n === m ? <h3>"You Win!"</h3>: null}
+    //             <p>Num 1: {m}</p>
+    //             <p>Num 2: {n}</p>
+    //         </div>
+    // );
+
     // No 2 Method: Less Reptitive Method - Ternary Operator Used
     // return(
     //             <div>
