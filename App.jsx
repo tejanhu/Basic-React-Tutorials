@@ -28,6 +28,7 @@ function App() {
     <div> 
 
       <ColorList colors={["red", "orange", "yellow", "green", "blue", "indigo", "violet"]}/>
+      <ColorList colors={["black", "darkblue", "grey"]}/>
 
     {/* <Heading color="purple" text="Salaam!" fontSize="50px"/>
     <Heading color="violet" text="Wassalaam!" fontSize="28px"/> */}
