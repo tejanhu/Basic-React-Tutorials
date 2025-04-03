@@ -4,6 +4,7 @@ import Greeter from './Greeter';
 import Die from './Die';
 import ListPicker from './ListPicker';
 import DoubleDice from './DoubleDice';
+import Heading from './Heading';
 
 // const data = [
 //   {
@@ -25,9 +26,12 @@ function App() {
 
     <div> 
 
+    <Heading color="purple" text="Salaam!" fontSize="50px"/>
+    <Heading color="violet" text="Wassalaam!" fontSize="28px"/>
+
+      {/* <DoubleDice/>
       <DoubleDice/>
-      <DoubleDice/>
-      <DoubleDice/>
+      <DoubleDice/> */}
 
       {/* <Greeter person="Hernandez" from="Martinez"/> 
       <Greeter person="Fernandez" from="Martinez"/> 
@@ -37,8 +41,8 @@ function App() {
       <Greeter/> 
       <Die/>
       <Die numSides={10}/>
-      <Die numSides={20}/> */}
-      {/* <ListPicker values={["dates", "cakes", "sweets", "milk"]}/>
+      <Die numSides={20}/>
+      <ListPicker values={["dates", "cakes", "sweets", "milk"]}/>
       <ListPicker values ={[100, 200, 300]}/> */}
       {/* <ListPicker values = {{country: "Egypt", continent: "Africa", religion:["Islam", "Christianity"]}}/>
       <ListPicker values = {{country: "The Gambia", continent: "Africa", religion:["Islam", "Christianity"]}}/>

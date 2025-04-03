@@ -1,18 +1,48 @@
 export default function DoubleDice(){
     const m = Math.floor(Math.random() * 3) + 1;
     const n = Math.floor(Math.random() * 3) + 1;
+    const isWinner = n === m;
+    const styles = {color: m === n ? "green": "red"};
     // Conditionals
 
-    // No 1 (Best Method): 
-
     return(
-        <div>
+        <div className="DoubleDice" style={styles}>
             <h2>Double Dice</h2>
-            {n === m && <h3>"You Win!"</h3>}
+            {isWinner && <h3>"You Win!"</h3>}
             <p>Num 1: {m}</p>
             <p>Num 2: {n}</p>
         </div>
     );
+
+    // return(
+    //     <div className="DoubleDice" style={styles}>
+    //         <h2>Double Dice</h2>
+    //         {n === m && <h3>"You Win!"</h3>}
+    //         <p>Num 1: {m}</p>
+    //         <p>Num 2: {n}</p>
+    //     </div>
+    // );
+
+
+    // No 1 (Best Method): 
+
+    // return(
+    //     <div>
+    //         <h2 className="DoubleDice" style={{color: "yellow", fontSize:"80px"}}>Double Dice</h2>
+    //         {n === m && <h3>"You Win!"</h3>}
+    //         <p>Num 1: {m}</p>
+    //         <p>Num 2: {n}</p>
+    //     </div>
+    // );
+
+    // return(
+    //     <div>
+    //         <h2 className="DoubleDice" style={styles}>Double Dice</h2>
+    //         {n === m && <h3>"You Win!"</h3>}
+    //         <p>Num 1: {m}</p>
+    //         <p>Num 2: {n}</p>
+    //     </div>
+    // );
 
     // return(
     //         <div>
