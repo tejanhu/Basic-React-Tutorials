@@ -5,6 +5,7 @@ import Die from './Die';
 import ListPicker from './ListPicker';
 import DoubleDice from './DoubleDice';
 import Heading from './Heading';
+import ColorList from './ColorList';
 
 // const data = [
 //   {
@@ -26,8 +27,10 @@ function App() {
 
     <div> 
 
-    <Heading color="purple" text="Salaam!" fontSize="50px"/>
-    <Heading color="violet" text="Wassalaam!" fontSize="28px"/>
+      <ColorList colors={["red", "orange", "yellow", "green", "blue", "indigo", "violet"]}/>
+
+    {/* <Heading color="purple" text="Salaam!" fontSize="50px"/>
+    <Heading color="violet" text="Wassalaam!" fontSize="28px"/> */}
 
       {/* <DoubleDice/>
       <DoubleDice/>
